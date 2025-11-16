@@ -1,0 +1,134 @@
+{
+  // Classe com namespace baseado no nome do projeto e pasta atual
+  "C# Class with namespace (ProjectName.Folder)": {
+    "prefix": "csclass",
+    "body": [
+      "namespace ${TM_DIRECTORY/.*[\\\\\\/](.*?)[\\\\\\/](.*)/$1.$2/}",
+      "{",
+      "    public class ${1:${TM_FILENAME_BASE}}",
+      "    {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "description": "C# class with namespace based on project and folder name"
+  },
+
+  // Propriedade
+  "C# Property": {
+    "prefix": "csprop",
+    "body": [
+      "public ${1:string} ${2:PropertyName} { get; set; }"
+    ],
+    "description": "C# auto-property"
+  },
+
+  // Construtor
+  "C# Constructor": {
+    "prefix": "csctor",
+    "body": [
+      "public ${1:ClassName}(${2:params})",
+      "{",
+      "    $0",
+      "}"
+    ],
+    "description": "C# Constructor"
+  },
+
+  // Interface
+  "C# Interface": {
+    "prefix": "csinterface",
+    "body": [
+      "namespace ${TM_DIRECTORY/.*[\\\\\\/](.*?)[\\\\\\/](.*)/$1.$2/}",
+      "{",
+      "    public interface ${1:IInterfaceName}",
+      "    {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "description": "C# interface with ProjectName.Folder namespace"
+  },
+
+  // Classe de serviço que implementa interface
+  "C# Service class": {
+    "prefix": "csservice",
+    "body": [
+      "namespace ${TM_DIRECTORY/.*[\\\\\\/](.*?)[\\\\\\/](.*)/$1.$2/}",
+      "{",
+      "    public class ${1:ServiceName} : ${2:I$1}",
+      "    {",
+      "        public ${1:ServiceName}()",
+      "        {",
+      "            $0",
+      "        }",
+      "    }",
+      "}"
+    ],
+    "description": "C# service class implementing interface with proper namespace"
+  },
+
+  // Enumeração
+  "C# Enum": {
+    "prefix": "csenum",
+    "body": [
+      "namespace ${TM_DIRECTORY/.*[\\\\\\/](.*?)[\\\\\\/](.*)/$1.$2/}",
+      "{",
+      "    public enum ${1:EnumName}",
+      "    {",
+      "        ${2:FirstValue},",
+      "        ${3:SecondValue}",
+      "    }",
+      "}"
+    ],
+    "description": "C# enum with ProjectName.Folder namespace"
+  },
+
+  // Método público
+  "C# Public Method": {
+    "prefix": "csmethod",
+    "body": [
+      "public ${1:void} ${2:MethodName}(${3})",
+      "{",
+      "    $0",
+      "}"
+    ],
+    "description": "C# public method"
+  },
+
+  // Override do ToString
+  "C# Override ToString": {
+    "prefix": "cstoString",
+    "body": [
+      "public override string ToString()",
+      "{",
+      "    return $1;",
+      "}"
+    ],
+    "description": "Override ToString method"
+  },
+
+  // Record
+  "C# Record": {
+    "prefix": "csrecord",
+    "body": [
+      "namespace ${TM_DIRECTORY/.*[\\\\\\/](.*?)[\\\\\\/](.*)/$1.$2/}",
+      "{",
+      "    public record ${1:RecordName}(${2})",
+      "    {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "description": "C# record with ProjectName.Folder namespace"
+  },
+
+  // Console.WriteLine
+  "C# Console Log": {
+    "prefix": "log",
+    "body": [
+      "Console.WriteLine(${1});"
+    ],
+    "description": "C# Console.WriteLine"
+  }
+}
