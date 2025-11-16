@@ -57,7 +57,8 @@ Estes são os atalhos que mais economizam tempo.
 
 
 [SEU-JSON-AQUI]
-// Cole aqui o JSON completo que você me mostrou
+
+[Json do Snippet C#](https://github.com/juniorjuarez/vs-code-setup/blob/main/Snippets/csharp.json)
 
 
 
