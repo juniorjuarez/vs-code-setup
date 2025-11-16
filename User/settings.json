@@ -1,0 +1,175 @@
+{
+  // =========================================================================
+  // 💻 C# E .NET BACKEND (OMNISHARP)
+  // =========================================================================
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.formatOnSave": true // Garante a formatação ao salvar
+  },
+  "omnisharp.useModernNet": true,
+  "omnisharp.enableRoslynAnalyzers": true,
+  "omnisharp.enableEditorConfigSupport": true,
+  "omnisharp.organizeImportsOnFormat": true,
+  "omnisharp.projectLoadTimeout": 60,
+  "dotnet.formatting.organizeImportsOnFormat": true,
+
+  // Sugestões de Produtividade C#
+  "editor.suggest.snippetsPreventQuickSuggestions": false, // Snippets C# aparecem rápido
+  "editor.suggestOnTriggerCharacters": true, // Sugestões rápidas após '.'
+  // "omnisharp.waitForDebugger": true, // Opcional: Útil em cenários de debug complexo
+
+  // =========================================================================
+  // 💾 BANCO DE DADOS E GIT
+  // =========================================================================
+  "dbcode.connections": [
+    {
+      "connectionId": "Y7ilETedVK-Ly3YncABw0",
+      "name": "Catalogo",
+      "driver": "sqlite",
+      "color": "#FFC54F",
+      "connectionType": "socket",
+      "socket": "c:\\Users\\jose.santos\\Documents\\VS_CODE\\BACKEND\\dotnet\\UDEMY\\Macoratti\\APICatalogo\\CatalogoProdutos.API\\Data\\catalogo.db",
+      "readOnly": false,
+      "driverOptions": {
+        "extensions": []
+      },
+      "idleTimeout": 0
+    }
+  ],
+  "mssql.connectionGroups": [
+    {
+      "name": "ROOT",
+      "id": "7847D55E-A2B3-45A9-A946-FECB5F370B7E"
+    }
+  ],
+  "database-client.autoSync": true,
+
+  "git.autofetch": true,
+  "git.path": "C:\\Users\\jose.santos\\Documents\\VS_CODE\\GitPortable\\PortableGit\\bin\\git.exe", // Caminho do git mantido
+
+  // =========================================================================
+  // 🎨 APARÊNCIA E UI
+  // =========================================================================
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredDarkColorTheme": "poimandres",
+  "workbench.preferredLightColorTheme": "Min Light",
+  "workbench.statusBar.visible": false, // Barra de Status Oculta
+
+  "explorer.confirmDelete": false,
+  "explorer.sortOrder": "foldersNestsFiles",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
+    "*.fs": "${basename}.fsi, ${basename}.fs.js, ${basename}.fs.js.map",
+    "*.fsl": "${basename}.fsi, ${basename}.fs",
+    "*.fsy": "${basename}.fsi, ${basename}.fs",
+    "tailwind.config.*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+
+  // =========================================================================
+  // 🧠 EDITOR E DIGITAÇÃO
+  // =========================================================================
+  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.8,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "editor.parameterHints.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never" // Prevenir conflito com Prettier/C#
+  },
+
+  // Configurações Específicas
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  "prettier.organizeImports": false,
+  "jdk.telemetry.enabled": true,
+  "editor.inlineSuggest.edits.showCollapsed": true, // Recursos Insiders/Experimentais
+
+  // =========================================================================
+  // 👨‍💻 TERMINAL
+  // =========================================================================
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.showExitAlert": false,
+
+  // 🌐 WEB (JS/TS/TAILWIND/EMMET)
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "mdx": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "mdx": "jsx"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    "class:\\s*?[\"'`]([^\"'`]*).*?,"
+  ],
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+
+  // 📁 ASSOCIAÇÕES E LINGUAGENS
+  "files.associations": {
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css",
+    ".dev.vars": "dotenv"
+  },
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.guard.ts": "typescript",
+    "*.spec.ts": "ts-test",
+    "*.e2e-spec.ts": "ts-test",
+    "*.mock.ts": "ts-test",
+    "vitest.config.e2e.ts": "vite",
+    ".env.development.local": "gear",
+    ".env.test.local": "gear",
+    ".env.local": "gear",
+    ".env.example": "gear"
+  },
+
+  // 🧠 SPELL CHECK
+  "cSpell.language": "en,pt",
+  "cSpell.userWords": [
+    "automations",
+    "chakra",
+    "nestjs",
+    "postgresql",
+    "tailwindcss"
+  ],
+
+  // ⚙️ EXENSÕES DIVERSAS
+  "gitlens.codeLens.recentChange.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "tabnine.experimentalAutoImports": true
+  // A chave "terminal.integrated.env.osx" foi removida/comentada,
+  // pois é específica para macOS e você está em um ambiente Windows/Cross-platform.
+}
